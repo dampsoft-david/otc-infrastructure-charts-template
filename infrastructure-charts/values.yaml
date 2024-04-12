@@ -66,10 +66,10 @@ charts:
       global.prometheus.host: "admin.{{.Values.projectValues.rootDomain}}"
       global.grafana.host: "admin.{{.Values.projectValues.rootDomain}}"
       prometheusStack.grafana.adminPassword: "QvyjupKdPTRD3rlkoEqqNeo0ssICCBs0"
-  kasm:
-    namespace: kasm
-    repoURL: "https://charts.iits.tech"
-    targetRevision: "0.3.0"
-    parameters:
-      services.firstuser.extraEnv.VNC_PW: "Fwf4SciAmNtnT6v5CG7JRkG8ygrwpU6L"
-      services.firstuser.ingressRoute.domain: "kasm.triceratops.iits.tech"
+  # kasm:
+  #   namespace: kasm
+  #   repoURL: "https://charts.iits.tech"
+  #   targetRevision: "0.3.0"
+  #   parameters:
+  #     services.firstuser.extraEnv.VNC_PW: "Fwf4SciAmNtnT6v5CG7JRkG8ygrwpU6L"
+  #     services.firstuser.ingressRoute.domain: "kasm.triceratops.iits.tech"
