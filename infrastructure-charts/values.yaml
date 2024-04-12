@@ -73,3 +73,9 @@ charts:
   #   parameters:
   #     services.firstuser.extraEnv.VNC_PW: "Fwf4SciAmNtnT6v5CG7JRkG8ygrwpU6L"
   #     services.firstuser.ingressRoute.domain: "kasm.triceratops.iits.tech"
+  elasticsearch:
+    namespace: monitoring
+    targetRevision: "8.7.0"
+    parameters:
+      ingress.host: "admin.{{.Values.projectValues.rootDomain}}"
+      backup.enabled: "false"
