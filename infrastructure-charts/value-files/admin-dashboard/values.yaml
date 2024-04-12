@@ -8,13 +8,13 @@ ingress:
 defaultDashboard:
   tiles:
     kibana:
-      enabled: "false"
+      enabled: "true"
     grafana:
       enabled: "true"
     prometheus:
       enabled: "true"
     elasticsearch:
-      enabled: "false"
+      enabled: "true"
     vault:
       enabled: "false"
     otc:
